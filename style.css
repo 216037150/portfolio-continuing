@@ -130,7 +130,7 @@ body {
 }
 
 .home-sci a:hover {
-    background: #0ef;
+    background: rgb(3, 55, 59);
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
@@ -150,6 +150,7 @@ body {
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
+        cursor: pointer;
 }
 
 .btn-box:hover {
@@ -164,20 +165,20 @@ body {
     align-items: center;
     gap: 1.5rem;
 
-    /* align-items: center;
+    align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding-bottom: 6rem; */
+    padding-bottom: 6rem;
 
 
 }
 
-/* .about{
+.about{
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-} */
+}
 .about-img img {
     padding-bottom: 20%;
     max-width: 630px;
@@ -240,6 +241,237 @@ body {
     margin-top: 50px;
 
 }
+
+
+
+
+
+
+.portfolio {
+    text-align: center;
+    margin: 0 auto;
+}
+.portfolio-content {
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    justify-content: center; /* Center content horizontally */
+    overflow-x: auto; /* Add horizontal scroll if necessary */
+}
+.row {
+    margin: 20px;
+    width: 300px; /* Adjust based on your desired size */
+    text-align: left;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+.row img {
+    width: 100%;
+    height: auto;
+}
+.layer {
+    padding: 10px;
+}
+.layer h5, .layer p, .layer a {
+    margin: 10px 0;
+}
+
+
+/* Proffesional skills */
+.container1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.Professional-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radial-bars {
+    margin: 10px 0;
+    width: 50%; /* Adjust based on your desired size */
+    text-align: center;
+}
+
+.radial-bars svg {
+    width: 100px; /* Adjust based on your desired size */
+    height: 100px; /* Adjust based on your desired size */
+}
+
+.percentage {
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 14px; /* Adjust the font size */
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* dispalying the technical skill and proffesional skillsto be two columns */
+
+.container1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.Technical-bars, .radial-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar, .radial-bars {
+    margin: 10px 0;
+    width: 80%;
+}
+
+.bar img, .radial-bars svg {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-line {
+    background-color: #e0e0e0;
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.progress-line span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #007bff;
+    width: 0;
+}
+
+.percentage {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+
+
+
+/* top up button  */
+.top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 50%; 
+    text-align: center; 
+    z-index: 1000; /* Ensure it appears above other elements */
+    text-decoration: none; 
+}
+.top i {
+    font-size: 24px;
+}
+
+
+
+
+/* Services  */
+.portfolio {
+    text-align: center;
+    margin: 0 auto;
+}
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row {
+    margin: 20px;
+    width: 300px; /* Adjust based on your desired size */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row img {
+    width: 100%;
+    height: auto;
+}
+.layer {
+    padding: 10px;
+}
+.layer h5, .layer p, .layer a {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .services-list div {
     background-color: transparent;
@@ -327,10 +559,10 @@ section {
     margin-bottom: 70px;
     margin-top: 10px;
 }
-
+/* 
 /* .bar i {
     margin-top: -20px;
-} */
+} */ */
 
 .Technical-bars .bar {
     margin-top: 40px 0;
@@ -637,7 +869,7 @@ section {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
 }
 
 .row {
@@ -766,7 +998,7 @@ section {
 }
 
 .contact-icons i {
-    display: inline-block;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -785,8 +1017,35 @@ section {
 
 }
 
+
+
+
+.contact-icon {
+    display: flex;
+    gap: 10px; 
+}
+
+.contact-icon a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid aqua;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-icon i {
+    color: #1be0b8;
+    font-size: 24px;
+}
+
+
+
+
 .contact-icons i:hover {
-    background: #0ef;
+    background: rgb(9, 26, 27);
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
@@ -818,7 +1077,7 @@ form textarea {
     display: inline-block;
     padding: 14px 60px;
     background: #0ef;
-    border-radius: 18px;
+    border-radius: 40px;
     font-size: 16px;
     color: #081b29;
     letter-spacing: 1px;
