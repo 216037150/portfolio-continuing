@@ -261,6 +261,11 @@ body {
 
 }
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 .portfolio {
     text-align: center;
     margin: 0 auto;
@@ -350,8 +355,6 @@ body {
 .about-me h2 span {
     color: #0ef;
 }
-
-
 
 
 /* Services  */
@@ -621,7 +624,10 @@ section {
     content: "60%";
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .progress-line span::before {
     content: "";
     position: absolute;
