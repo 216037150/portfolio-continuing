@@ -1026,6 +1026,14 @@ form textarea {
     border-radius: 0.5rem;
 }
 
+
+
+
+/* skill section */
+
+
+
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
@@ -1071,6 +1079,44 @@ form textarea {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .home {
+        padding: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.7rem;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .btn-box, .read {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .about-container {
+        padding: 5%;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .row {
+        margin: 5px auto;
     }
 }
 
