@@ -1101,7 +1101,8 @@ form textarea {
         margin: 5px;
     }
 
-    .btn-box, .read {
+    .btn-box,
+    .read {
         font-size: 10px;
         padding: 5px 10px;
     }
@@ -1120,4 +1121,77 @@ form textarea {
     }
 }
 
+/* Navbar Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
+/* Hide menu icon by default */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 850px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #09202e;
+        /* padding: 15px 0; */
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+        margin-left: 30px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home {
+        margin-top: 80px;
+        width: 500px
+    }
+
+    #me {
+        font-size: 14px;
+        text-align: justify;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .about {
+        font-size: 14px;
+        text-align: justify;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+}

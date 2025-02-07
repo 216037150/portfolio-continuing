@@ -9,27 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <scrip src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+        </script>
+
 </head>
 
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
-        
+
+        <div class="menu-icon">
+            <i class='bx bx-menu' id="menu-btn"></i>
+        </div>
+
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services" style="--i:4">Services</a>
-            <a href="#skills" style="--i:3">Skills</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="./Siyabonga_Zungu_Resume_G.pdf" download>CV</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-content">
             <h3> Hi, I'm</h3>
             <h1>Siyabonga Zungu</h1>
             <h3>And I am <span class="text"></span> </h3>
-            <p>I'm a Full Stack Developer with expertise in website creation and design, frontend development, and
+            <p id="me">I'm a Full Stack Developer with expertise in website creation and design, frontend development,
+                and
                 proficiency in HTML, CSS, Python, JavaScript, and GitHub. I have hands-on experience in full stack
                 development and I'm committed to delivering innovative solutions. Skilled in cross-functional team
                 collaboration, I am ready to leverage my abilities to contribute to dynamic software development
@@ -41,11 +50,9 @@
                 <a href="https://twitter.com/home?lang=en-za"><i class="bx bxl-twitter" style="color: #1be0b8;"></i></a>
                 <a href="https://www.linkedin.com/in/siyabonga-zungu-851a501b4/"><i class="bx bxl-linkedin"
                         style="color: #1be0b8;"></i></a>
-                <!-- <a href="https://web.telegram.org/"><i class="bx bxl-telegram" style="color: #1be0b8;"></i></a> -->
                 <a href="https://github.com/216037150"><i class='bx bxl-github'></i></a>
 
             </div>
-            <!-- <a href="#" class="btn-box"> More about Me</a> -->
             <a class="btn-box" href="#about" style="--i:2">More about Me</a>
         </div>
         <div>
@@ -59,7 +66,6 @@
                 <img src="images/Siya2-removebg-preview.png" alt="my-pic">
             </div>
             <div class="about-text">
-                <!-- <h2>About <span>Me</span></h2> -->
                 <h4>Full Stack Developer</h4>
                 <p>
                     During my tenure at WeThinkCode, I delved into software engineering, honing a versatile skill set
@@ -85,7 +91,7 @@
                 <h1 class="sub-tittle"> My <span>Services</span></h1>
                 <div class="services-list">
                     <div>
-                        <i class='bx bx-code' style='color:#1be0b8'></i>
+                        <i class='bx bx-code' style='color:#1be0b8; width: 4px; height: 60px;'></i>
                         <h2>Full Stack Developer</h2>
                         <p> Dedicated to delivering robust and innovative solutions, adept at collaborating within
                             cross-functional
@@ -133,7 +139,7 @@
             </div>
         </div>
     </section>
-    <div class="skills" id="skills">
+    <!-- <div class="skills" id="skills">
         <h1 class="sub-tittle"> My <span>Skills</span></h1>
         <section class="skills-section" id="Skills" style="margin-bottom: -400px; margin-left: 5em;">
             <h1 style="margin-bottom: 2em; ">Front-End</h1>
@@ -159,215 +165,216 @@
                     </div>
                 </div>
                 <!-- Angular added -->
-                <div class="bar"><i class='bx bxl-angular' style='color:#dd0031 ; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:40px">Angular</span>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="back-end">
-                <h1>Back-End</h1>
-                <div class="bar"><i class='bx bxl-java' style='color:#0e48c5 ; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:55px">Java</span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-python' style='color:#1b3f69 ; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:45px">Python</span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-nodejs' style='color:#1be056 ; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:55px">Node.js</span>
-                    </div>
-                </div>
-                <div style="width: 20px;">
-                    <img src="./images/Springboot.png" alt="springboot" style="border-radius: 100px;">
-                </div>
-            </div>
-    
-            <div class="data-base" style="margin-left: 22em;">
-                <h1>Database management system (DBMS)</h1>
-                <div class="bar"><i class='bx bxl-postgresql' style='color:#32528f ; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:55px">Postgresql</span>
-                    </div>
-                </div>
-                <div class="bar"><i class='bx bxl-mongodb' style='color:#0caf5e; font-size:150px'></i>
-                    <div class="info">
-                        <span style="margin-left:48px">MongoDb</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-        <section>
-            <div class="portfolio" id="project">
-                <div class="main-text" id="project">
-                    <h2 style="margin-top: 10em;">Latest <span>Project</span></h2>
-                    <div class="portfolio-content" style="display: flex;">
-                        <div class="row">
-                            <img src="images/Calculator.png" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Calculator</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://216037150.github.io/OOP_JavaScript_calculator/"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Booking System</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Booking System</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <img src="images/API.PNG" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Rest API</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://github.com/216037150/Rest-API"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="images/ChessBoard.PNG" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Chess Board</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://216037150.github.io/Chessboard/"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
-                            <div class="layer">
-                                <h5>Booking System</h5>
-                                <p> The application allows users to submit a form and stores the submitted data in a
-                                    MongoDB database.
-                                    It also provides an endpoint to retrieve all submitted form data.</p>
-                                <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <img src="images/Snake.png" style="height: 400px;" alt="siya">
-                            <div class="layer">
-                                <h5>Snake Game</h5>
-                                <p>This code forms a basic snake game where the player controls the snake with the arrow
-                                    keys to eat food,
-                                    growing the snake and increasing the score. The game ends if the snake collides with
-                                    the walls or itself.</p>
-                                <a href="https://216037150.github.io/snakeGame/"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <img src="images/Tutering.PNG" style="height: 400px;" alt="siya">
-                            <div class="layer">
-                                <h5>UI/UX Design</h5>
-                                <p> </p>
-                                <a href="https://tuturing-web-site.vercel.app/"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <img src="images/Roll.PNG" style="height: 400px;" alt="siya">
-                            <div class="layer">
-                                <h5>Rolling a dice</h5>
-                                <p> </p>
-                                <a href="https://216037150.github.io/Rolling-dice/"><i class="bx bx-link-external"
-                                        style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img src="images/MachineP.png" style="height: 400px;" alt="siya">
-                            <div class="layer">
-                                <h5>Machine-Learning-Diabetes</h5>
-                                <p> This repository contains code for analyzing and predicting diabetes readmission
-                                    using machine learning techniques.
-                                </p>
-                                <a href="https://github.com/216037150/Machine-Learning-Diabetes"><i
-                                        class="bx bx-link-external" style="color: rgb(139, 12, 123);"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="contact-text">
-                <h2>Contact <span>Me</span></h2>
-                <h4>Feel free to contact Me</h4>
-                <p>
-                    I am proficient in communication skills, including group work and group leadership. I have used
-                    GitHub for version control and code collaboration.
-                </p>
-                <div class="contact-list">
-                    <li><i class="bx bxs-send"></i>siyabongazungu95@gmail.com</li>
-                    <li><i class="bx bxs-phone"></i>0609360456</li>
-                </div>
-                <div class="contact-icon">
-                    <a href="https://www.tiktok.com/foryou?lang=en"><i class="bx bxl bxl-tiktok"
-                            style="color: #1be0b8;"></i></a>
-                    <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en"><i class="bx bxl-instagram"
-                            style="color: #1be0b8;"></i></a>
-                    <a href="https://twitter.com/home?lang=en-za"><i class="bx bxl-twitter"
-                            style="color: #1be0b8;"></i></a>
-                    <a href="https://www.linkedin.com/in/siyabonga-zungu-851a501b4/"><i class="bx bxl-linkedin"
-                            style="color: #1be0b8;"></i></a>
-
-                </div>
-            </div>
-            <div class="contact-form">
-                <script src="main.js"></script>
-
-                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="0bd3a86f-9fb7-4378-a775-e3daca14915b">
-                    <input id="FullName" placeholder="Enter your name" type="text" name="name" required>
-                    <input type="email" name="email" id="Email" placeholder="Enter your Email" required>
-                    <input type="text" id="Subject" placeholder="Enter your Subject" required>
-                    <textarea id="Message" name="message" cols="40" rows="10" placeholder="Enter your message"
-                        required></textarea>
-                    <input type="submit" value="Submit" class="send" style="cursor: pointer;">
-                </form>
-            </div>
-
-        </section>
-        <div class="last-text">
-            <p>&copy; 2024, Crafted with love by Siyabonga Zungu, Full Stack Developer.</p>
+    <div class="bar"><i class='bx bxl-angular' style='color:#dd0031 ; font-size:150px'></i>
+        <div class="info">
+            <span style="margin-left:40px">Angular</span>
         </div>
-        <a href="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+    </div>
+
+    <div class="back-end">
+        <h1>Back-End</h1>
+        <div class="bar"><i class='bx bxl-java' style='color:#0e48c5 ; font-size:150px'></i>
+            <div class="info">
+                <span style="margin-left:55px">Java</span>
+            </div>
+        </div>
+        <div class="bar"><i class='bx bxl-python' style='color:#1b3f69 ; font-size:150px'></i>
+            <div class="info">
+                <span style="margin-left:45px">Python</span>
+            </div>
+        </div>
+        <div class="bar"><i class='bx bxl-nodejs' style='color:#1be056 ; font-size:150px'></i>
+            <div class="info">
+                <span style="margin-left:55px">Node.js</span>
+            </div>
+        </div>
+        <div style="width: 10px;">
+            <img src="./images/Springboot.png" alt="springboot" style="border-radius: 10px;">
+        </div>
+    </div>
+
+    <div class="data-base" style="margin-left: 22em;">
+        <h1>Database management system (DBMS)</h1>
+        <div class="bar"><i class='bx bxl-postgresql' style='color:#32528f ; font-size:150px'></i>
+            <div class="info">
+                <span style="margin-left:55px">Postgresql</span>
+            </div>
+        </div>
+        <div class="bar"><i class='bx bxl-mongodb' style='color:#0caf5e; font-size:150px'></i>
+            <div class="info">
+                <span style="margin-left:48px">MongoDb</span>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <section>
+        <div class="portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2 style="margin-top: 10em;">Latest <span>Project</span></h2>
+                <div class="portfolio-content" style="display: flex;">
+                    <div class="row">
+                        <img src="images/Calculator.png" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Calculator</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://216037150.github.io/OOP_JavaScript_calculator/"><i
+                                    class="bx bx-link-external" style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Booking System</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Booking System</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="images/API.PNG" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Rest API</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://github.com/216037150/Rest-API"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/ChessBoard.PNG" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Chess Board</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://216037150.github.io/Chessboard/"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/Booking_system.png" style="height: 400px;" alt="Booking App">
+                        <div class="layer">
+                            <h5>Booking System</h5>
+                            <p> The application allows users to submit a form and stores the submitted data in a
+                                MongoDB database.
+                                It also provides an endpoint to retrieve all submitted form data.</p>
+                            <a href="https://github.com/216037150/Simple_Website"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="images/Snake.png" style="height: 400px;" alt="siya">
+                        <div class="layer">
+                            <h5>Snake Game</h5>
+                            <p>This code forms a basic snake game where the player controls the snake with the arrow
+                                keys to eat food,
+                                growing the snake and increasing the score. The game ends if the snake collides with
+                                the walls or itself.</p>
+                            <a href="https://216037150.github.io/snakeGame/"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="images/Tutering.PNG" style="height: 400px;" alt="siya">
+                        <div class="layer">
+                            <h5>UI/UX Design</h5>
+                            <p> </p>
+                            <a href="https://tuturing-web-site.vercel.app/"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="images/Roll.PNG" style="height: 400px;" alt="siya">
+                        <div class="layer">
+                            <h5>Rolling a dice</h5>
+                            <p> </p>
+                            <a href="https://216037150.github.io/Rolling-dice/"><i class="bx bx-link-external"
+                                    style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="images/MachineP.png" style="height: 400px;" alt="siya">
+                        <div class="layer">
+                            <h5>Machine-Learning-Diabetes</h5>
+                            <p> This repository contains code for analyzing and predicting diabetes readmission
+                                using machine learning techniques.
+                            </p>
+                            <a href="https://github.com/216037150/Machine-Learning-Diabetes"><i
+                                    class="bx bx-link-external" style="color: rgb(139, 12, 123);"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Feel free to contact Me</h4>
+            <p>
+                I am proficient in communication skills, including group work and group leadership. I have used
+                GitHub for version control and code collaboration.
+            </p>
+            <div class="contact-list">
+                <li><i class="bx bxs-send"></i>siyabongazungu95@gmail.com</li>
+                <li><i class="bx bxs-phone"></i>0609360456</li>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.tiktok.com/foryou?lang=en"><i class="bx bxl bxl-tiktok"
+                        style="color: #1be0b8;"></i></a>
+                <a href="https://www.instagram.com/accounts/onetap/?next=%2F&hl=en"><i class="bx bxl-instagram"
+                        style="color: #1be0b8;"></i></a> -->
+    <!-- <a href="https://twitter.com/home?lang=en-za"><i class="bx bxl-twitter" style="color: #1be0b8;"></i></a>
+                <a href="https://www.linkedin.com/in/siyabonga-zungu-851a501b4/"><i class="bx bxl-linkedin"
+                        style="color: #1be0b8;"></i></a>
+
+            </div>
+        </div>
+        <div class="contact-form"> -->
+
+
+    <!-- <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0bd3a86f-9fb7-4378-a775-e3daca14915b">
+                <input id="FullName" placeholder="Enter your name" type="text" name="name" required>
+                <input type="email" name="email" id="Email" placeholder="Enter your Email" required>
+                <input type="text" id="Subject" placeholder="Enter your Subject" required>
+                <textarea id="Message" name="message" cols="40" rows="10" placeholder="Enter your message"
+                    required></textarea>
+                <input type="submit" value="Submit" class="send" style="cursor: pointer;">
+            </form>
+        </div> -->
+
+    <!-- </section> -->
+    <div class="last-text">
+        <p>&copy; 2024, Crafted with love by Siyabonga Zungu, Full Stack Developer.</p>
+    </div>
+    <a href="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    <script src="./Hamburg.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
