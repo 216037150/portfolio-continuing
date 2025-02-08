@@ -262,34 +262,11 @@ body {
 }
 
 
-
-
-
-
-.portfolio {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.portfolio-content {
-    display: flex;
-    flex-direction: row;
-    /* Align children in a row */
-    flex-wrap: nowrap;
-    /* Ensure no wrapping */
-    justify-content: center;
-    /* Center content horizontally */
-    overflow-x: auto;
-    /* Add horizontal scroll if necessary */
-}
-
 .row {
     margin: 20px;
     width: 300px;
-    /* Adjust based on your desired size */
     text-align: left;
     flex-shrink: 0;
-    /* Prevent shrinking */
 }
 
 .row img {
@@ -311,13 +288,12 @@ body {
 .top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 0px;
     color: white;
     padding: 10px 15px;
     border-radius: 50%;
     text-align: center;
     z-index: 1000;
-    /* Ensure it appears above other elements */
     text-decoration: none;
 }
 
@@ -524,133 +500,6 @@ section {
     }
 }
 
-.Technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: #0ef;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.progress-line.html span {
-    width: 90%;
-}
-
-.progress-line.css span {
-    width: 65%;
-}
-
-.progress-line.JavaScript span {
-    width: 68%;
-}
-
-.progress-line.python span {
-    width: 75%;
-}
-
-.progress-line.react span {
-    width: 60%;
-}
-
-.progress-line.java span {
-    width: 65%;
-}
-
-.progress-line.node span {
-    width: 60%;
-}
-
-.progress-line.mysql span {
-    width: 68%;
-}
-
-.progress-line.mongodb span {
-    width: 60%;
-}
-
-
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: black;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.progress-line.html span::after {
-    content: "90%";
-}
-
-.progress-line.css span::after {
-    content: "65%";
-}
-
-.progress-line.JavaScript span::after {
-    content: "68%";
-}
-
-.progress-line.node span::after {
-    content: "60%";
-}
-
-
-.progress-line.mysql span::after {
-    content: "68%";
-}
-
-.progress-line.python span::after {
-    content: "75%";
-}
-
-.progress-line.react span::after {
-    content: "60%";
-}
-
-.progress-line.java span::after {
-    content: "65%";
-}
-
-.progress-line.mongodb span::after {
-    content: "60%";
-}
-
-
-
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: black;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-}
-
-.radial-bars {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
 
 .radial-bars .radial-bar {
     width: 50%;
@@ -685,37 +534,7 @@ section {
     }
 }
 
-.path {
-    stroke-width: 10;
-    stroke: #0ef;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
 
-.path-1 {
-    animation: animate-path1 1s 1s linear forwards;
-}
-
-.path-2 {
-    animation: animate-path2 1s 1s linear forwards;
-}
-
-.path-3 {
-    animation: animate-path3 1s 1s linear forwards;
-}
-
-.path-4 {
-    animation: animate-path4 1s 1s linear forwards;
-}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 50;
-        ;
-    }
-}
 
 @keyframes animate-path2 {
     100% {
@@ -985,7 +804,8 @@ form textarea {
     background: #0ef;
     border-radius: 40px;
     font-size: 16px;
-    color: #b4bdc4;
+    color: black;
+
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -995,6 +815,11 @@ form textarea {
     box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
 
+
+}
+
+.send {
+    cursor: pointer;
 }
 
 .contact-form form .send:hover {
@@ -1082,46 +907,6 @@ form textarea {
     }
 }
 
-
-@media (max-width: 480px) {
-    .home {
-        padding: 10px;
-    }
-
-    .home-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .home-content p {
-        font-size: 0.7rem;
-    }
-
-    .navbar a {
-        font-size: 12px;
-        margin: 5px;
-    }
-
-    .btn-box,
-    .read {
-        font-size: 10px;
-        padding: 5px 10px;
-    }
-
-    .about-container {
-        padding: 5%;
-    }
-
-    .services-list {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 15px;
-    }
-
-    .row {
-        margin: 5px auto;
-    }
-}
-
-/* Navbar Styling */
 .header {
     display: flex;
     justify-content: space-between;
@@ -1152,7 +937,6 @@ form textarea {
         left: 0;
         width: 100%;
         background: #09202e;
-        /* padding: 15px 0; */
     }
 
     .navbar a {
@@ -1172,9 +956,51 @@ form textarea {
     }
 
     .home {
-        margin-top: 80px;
-        width: 500px
+        padding-right: 40px;
     }
+
+    .home-sci {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 0.4rem;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+
+    .read {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .btn-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-container {
+        padding: 5%;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .row {
+        margin: 5px auto;
+    }
+
+
 
     #me {
         font-size: 14px;
@@ -1193,5 +1019,20 @@ form textarea {
         margin: 0;
         line-height: 1.5;
     }
+
+    .contact {
+        display: block;
+    }
+
+    .contact-form {
+        padding-top: 30px;
+    }
+
+    .spancontact {
+        font-size: 5px;
+        font-weight: 2px;
+        text-align: center;
+    }
+
 
 }
